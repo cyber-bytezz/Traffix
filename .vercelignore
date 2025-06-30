@@ -1,0 +1,28 @@
+# Ignore everything except frontend and necessary config files
+*
+!frontend/**
+!vercel.json
+!.gitignore
+!package.json
+!package-lock.json
+
+# Ignore node_modules in all directories
+**/node_modules/**
+
+# Ignore build artifacts
+**/build/**
+**/.next/**
+**/out/**
+
+# Ignore environment files (except the ones Vercel needs)
+.env*.local
+!.env
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
